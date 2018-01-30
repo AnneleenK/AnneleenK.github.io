@@ -1,0 +1,981 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  Begin van het css bestand  */
+
+/* FONT */
+@font-face {
+    font-family: NSBasic;
+    src: url(font/nssans__-webfont.ttf);
+}
+
+@font-face {
+    font-family: NSBold;
+    src: url(font/nssanbol-webfont.ttf);
+}
+
+/* BASIC */
+
+html {
+    font-family: "NSBasic";
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #ffc917;
+    height: 50px;
+    width: 100%;
+}
+
+nav > ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > ul > li {
+    align-self: center;
+}
+
+
+nav > ul > li > a {
+    display: flex;
+}
+
+nav > ul > li > a > img {
+    height: 35px;
+    width: auto;
+}
+
+a {
+    font-size: 16px;
+    line-height: 250%;
+}
+
+h2 {
+    font-size: 170%;
+    margin: 5% 0% 2% 3%;
+    color: #003082;
+}
+
+button{
+    margin: 7%;
+    text-align: center;
+}
+
+h3 {
+    font-family: NSBold;
+    color: white;
+    font-size: 150%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+main {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+body {
+    background-color: #e6e6e9;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px auto 60px;
+}
+
+img {
+    width: 20%;
+}
+
+p{
+    font-size:90%;
+    line-height: 180%;
+    margin: 5%;
+}
+
+/* LOGIN PAGINA & AANMDELD PAGINA */
+
+body.login,
+body.aanmelden {
+    background-color: #e6e6e9;
+    background-image: url(images/lezenintrein.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "NSBasic";
+}
+    /* bron:https://werkenbijns.nl/nieuws/lekker-lezen-doe-je-de-trein/ */
+
+body.login > main,
+body.aanmelden > main {
+    background-color: rgba(255, 201, 23, .9);
+    margin: 25% 5% 0% 5%;
+    padding: 3%;
+}
+
+legend {
+    font-size: 28px;
+    margin-bottom: 5%;
+    color: #003082;
+}
+
+label {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+input {
+    border: none;
+    width: 50%;
+    font-size: 100%;
+    padding: 2% 0%;
+    width: 100%;
+}
+
+input[type=submit],
+#next {
+    background-color: #0079d3;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5%;
+    padding: 2%
+}
+
+.pijltje{
+    width:2%;
+    margin: 3% 2% 0 0;
+}
+
+.doorlinken{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 90%;
+}
+
+.hidden {
+    display: none;
+}
+
+.volgende {
+    margin: 0;
+}
+
+.inloggen{
+    margin-bottom: 3%;
+}
+   
+input:focus {
+    border-color: #003082;
+    outline: 1px dotted #003082;
+    outline-offset: .225rem
+}
+
+.volgende:hover,
+input[type=submit]:hover{
+    box-shadow: 0 -3.125rem 0 #003082 inset;
+}
+
+.doorlinken:hover{
+    margin-left: 3%;
+}
+
+/* Overzicht pagina */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: #ffc917;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 13%;
+    padding-left: 20%;
+}
+
+h1.kop {
+    color: white;
+    font-size: 190%;
+    color: #003082;
+    padding-left: 5%;
+}
+
+.direct {
+    background-image: url(images/mensen%20trein.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+}
+    /* bron:https://www.mamasliefste.nl/blog/10x-als-telefoon-vergeten-bent/ */
+
+.hoofd {
+    font-size: 200%;
+    color: white;
+    margin-top: 0;
+    padding-top: 5%;
+    text-indent: .2em;
+    font-family: NSBold;
+}
+
+section.iconen,
+.eeen,
+.tweee,
+.drie,
+.vier,
+.vijf,
+.zes,
+.zeven,
+.acht{
+    background-color: white;
+    height: 40px;
+    margin-top: 55%;
+    padding: 0 5% 0 7%;;
+    display: block;
+    display: flex;
+    align-items:center;
+}
+
+.kinderboek {
+    background-image: url(images/kinderboek.jpg);
+}
+
+/* bron: http://www.worldvision.nl/wat-doen-wij/duurzame-ontwikkeling/miraj */
+
+.gefrustreerd {
+    background-image: url(images/gefrustreerd.jpg);
+}
+
+/* bron: https://www.menselijk-lichaam.com/psychologie/frustratie/ */
+
+.alzheimer {
+    background-image: url(images/alzheimer.jpg);
+}
+
+/* bron: https://www.icthealth.nl/nieuws/nieuwsitem/article/eenvoudige-test-stelt-risico-op-alzheimer-vast.html */
+
+.verrassing {
+    background-image: url(images/verrassing.jpg);
+}
+
+/* bron:ron:https://pxhere.com/nl/photo/1364223 */
+
+.beroemd {
+    background-image: url(images/beroemd.jpg);
+}
+
+/* bron:https://nl.freepik.com/vrije-foto-vectoren/beroemd-sofia */
+
+.zoon {
+    background-image: url(images/zoon.jpg);
+}
+
+/* bron:https://www.google.nl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiixaaRxpXXAhWDJ1AKHTXeDOIQjRwIBw&url=https%3A%2F%2Fpixabay.com%2Fnl%2Fphotos%2Fzombie%2F&psig=AOvVaw2oCPzGCLlp7PhEpXgIdbmC&ust=1509356730024909 */
+
+.code {
+    background-image: url(images/code.jpg);
+}
+
+/* bron:http://www.impactlab.net/2017/03/11/ai-learns-to-write-its-own-code-by-stealing-from-other-programs/ */
+
+.zombie {
+    background-image: url(images/zombie.jpg);
+}
+
+/* bron:https://pixabay.com/nl/photos/zombie/ */
+
+.boers {
+    background-image: url(images/boers.jpg);
+}
+
+/* bron: https://bluecircle.nl/recordaantal-brieven-voor-boeren-in-boer-zoekt-vrouw*/
+
+button.een,
+.next{
+    padding-bottom: 2% #cfa317;
+    background-color: #ffc917;
+    margin-right: 6%;
+}
+
+button.een > a{
+    color: black;
+    font-family: "NSBasic";
+}
+
+button.twee,
+.meer{
+    background-color: #0079d3;
+    margin-left: 0;
+}
+
+button.twee > a,
+.meer{
+    color: white;
+    font-family: "NSBasic";
+}
+
+.kinderboek,
+.alzheimer,
+.gefrustreerd,
+.profiel,
+.verrassing,
+.beroemd,
+.zoon,
+.zombie,
+.code,
+.boers {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 0 3%;
+    overflow-x: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.parent {
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.profiel {
+    height: auto;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.profiel > a {
+    font-size: 1.3em;
+}
+
+img.profiel {
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.icoon {
+    height: 25px;
+    width: 35px;
+}
+
+img.reactie {
+    width: 97px;
+    padding-top: 3%;
+}
+
+div.nav{
+    display: none;
+}
+
+.meer{
+       display: none;
+    }
+img.verhaal{
+    width: 100%;
+    height:100%;
+}
+
+button.een:hover{
+    box-shadow: 0 -3.125rem 0 #cfa317 inset;
+}
+
+button.twee:hover,
+.meer:hover{
+    box-shadow: 0 -3.125rem 0 #003082 inset;
+}
+
+/* Verhalen */
+
+.klein{
+    width: 100%;
+    height: 100%;
+}
+
+.middel,
+.groot{
+    display: none;
+}
+
+.verhaaldrie{
+    background-color: white;
+}
+
+.verhaaltwee{
+    background-color: black;
+}
+
+.inleidingverrassing{
+    background-image: url(images/verrassing.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+ /* overig */
+
+.boeken{
+    background-image: url(images/boeken);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Animaties */
+
+/* Bron:https://daneden.github.io/animate.css/ */
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.bewegingactive {
+  animation: swing 3s;
+}
+
+.verhaalopslaan {
+	display: none;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.upanddown {
+  animation: bounce 2s;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.heart {
+  -webkit-animation-name: pulse;
+  animation: pulse 3s;
+}
+
+/*================================================================
+                Ipad mini
+==================================================================*/
+
+@media only screen and (min-width: 752px) and (max-width: 1025px){
+
+    /* Login & Aanmelden */ 
+
+    body.login > main,
+    body.aanmelden > main{
+        margin: 15% 5% 0% 5%;
+        padding: 3%;
+    }
+    
+    input {
+        width: 50%;
+        font-size: 100%;
+        padding: 2% 0%;
+        width: 100%;
+    }
+
+    input[type=submit],
+    #next {
+        margin-top: 3%;
+        padding: 2%
+    }
+    
+    legend {
+        font-size: 180%;
+    }
+
+    label {
+        font-size: 130%;
+    }
+
+    .volgende {
+        font-size: 150%;
+    }
+    
+    .volgende{
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+    /* Overzicht pagina */
+    
+    .kinderboek,
+    .alzheimer,
+    .gefrustreerd,
+    .profiel,
+    .verrassing,
+    .beroemd,
+    .zoon,
+    .zombie,
+    .code,
+    .boers {
+        margin: 0 2%;
+    }
+    
+    h2{
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+    
+    button.een>a{
+        font-size: 160%;
+    }
+    
+    button.een{
+        padding: 0.5%;
+        margin: 4% 7% 0 24%;
+    }
+    
+    button.twee>a,
+    .meer{
+        font-size: 160%;
+    }
+    
+    button.twee{
+        padding: 0.5%;
+        margin: 4% 24% 5% 7%;;
+    }
+    
+    .direct {
+        height: 240px;
+    }
+    
+    .logo {
+        width: 6%;
+        padding-left: 40%;
+    }
+
+    h1.kop {
+        color: white;
+        font-size: 190%;
+        color: #003082;
+        padding-left: 2%;
+    }
+    
+    /* Verhalen */
+    
+    .middel{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .klein,
+    .groot{
+        display: none;
+    }
+    
+}
+
+
+/*================================================================
+                            Desktop
+==================================================================*/
+
+@media only screen and (min-width: 1025px) {
+
+   
+    /* Login & Aanmelden */
+    
+    body.login > main,
+    body.aanmelden > main{
+    margin: 10% 7% 0% 7%;
+    padding: 2%;
+    }
+    
+    legend {
+        font-size: 210%;
+        margin-bottom: 2%;
+    }
+
+    label {
+        font-size: 130%;
+        line-height: 250%;
+    }
+
+    input {
+        font-size: 100%;
+        padding: 1.5% 0%;
+    }
+
+    input[type=submit],
+    #next {
+        padding: 1.5%
+    }
+    
+    .doorlinken{
+        margin-top: -3%;
+    }
+    
+    
+    /* Overzicht pagina */
+    h1.kop {
+        font-size: 215%;
+        padding-left: 5%;
+    }
+
+    nav{
+        bottom: 91.8%; 
+        width: 75%;
+        margin-left: 25%;
+        background-color: #ffc917;
+        padding-bottom: 0.2%;
+        padding-top: 0.8%;
+    }
+    
+    header.kop{
+        width: 25%;
+    }
+
+    .logo {
+        width: 18%;
+        padding-left: 8%;
+    }
+    
+    div.nav{
+        display:flex;
+        margin-left: 15%;
+        text-decoration: none;
+        color: #003082;
+        font-size: 90%;
+    }
+
+    button.een {
+        margin: 3% 10% 5% 20%;
+    }
+
+    button.twee {
+        margin: 3% 20% 5% 10%
+    }
+    
+    .kinderboek,
+    .alzheimer,
+    .gefrustreerd,
+    .verrassing,
+    .beroemd,
+    .zoon,
+    .zombie,
+    .code,
+    .boers{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 20%;
+        margin: 1%;
+    }
+    
+    .parent {
+        white-space: inherit;
+    }
+    
+    .kinderboek,
+    .beroemd{
+        margin-left: 3%;
+    }
+    
+    .profiel{
+        margin-left: 3%;
+    }
+    
+    h2{
+        margin-left: 3%;
+    }
+    
+    .boers{
+       display: none;
+    }
+    
+    .meer{
+       display: flex;
+        margin: 2% 0 0 3%;
+        padding: 0.5%;
+        font-size: 140%;
+    }
+    
+    section.iconen,
+    .eeen,
+    .tweee,
+    .drie,
+    .vier,
+    .vijf,
+    .zes,
+    .zeven,
+    .acht{
+        margin-top: 110px;
+        margin-left: -131px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+    }
+    
+    .tweee{
+        margin-left: -120px;
+    }
+    
+    .drie{
+        margin-left: -148px;
+    }
+    
+    .vier{
+        margin-left: -122px;
+    }
+    
+    .vijf{
+        margin-left: -104px;
+    }
+    
+    .zes{
+        margin-left: -60px;
+    }
+    
+    .zeven{
+        margin-left: -86px;
+    }
+    
+    .acht{
+        padding-left: 91px;
+    }
+    
+    .icoon{
+        justify-content: center;
+        padding: 0 2%;
+    }
+    
+    .profiel{
+        margin-bottom: 2%;
+        width: 13%;
+    }
+    
+    img.profiel {
+        height: 140px;
+        width: 140px;
+    }
+    
+    /* Verhalen */
+    
+    .groot{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .klein,
+    .middel{
+        display: none;
+    }
+    
+    h1.kop{
+        font-size: 180%;
+
+    }
+    
+    nav.verhaal{
+        bottom: 91.3%;
+    
+}
+
+/*================================================================
+                            Desktop groot
+==================================================================*/
+
+@media only screen and (min-width: 1240px) {
+    
+    
+    /* Login & Aanmelden */
+    
+    body.login > main,
+    body.aanmelden > main{
+        margin: 7% 15% 0% 15%;
+        padding: 2%;
+    }
+    
+    /* Overzicht pagina */
+    
+    .direct{
+        height:280px;
+    }
+    
+    h2.hoofd{
+        font-size: 240%;
+    }
+    
+    .profiel{
+        margin: 0 0% 4% 3%;
+    }
+    
+    .kinderboek{
+        margin-left: 3%;
+    }
+    
+    .icoon{
+        padding: 0 7%;
+    }
+    
+    img.profiel {
+        height: 145px;
+        width: 145px;
+    }
+    
+    button.een,
+    button.twee{
+    padding: 0.5%;
+    }
+    button.een>a,
+    button.twee>a{
+    font-size: 160%;
+    }
+    
+}
+
+/*================================================================
+                            Desktop groot
+==================================================================*/
+
+@media only screen and (min-width: 1440px) {
+    
+    
+    /* Login & Aanmelden */
+    
+    
+    /* Overzicht pagina */
+    nav{
+        bottom:92.7%;
+    }
+    
+    h1{
+        font-size: 10%;
+    }
+}
+    

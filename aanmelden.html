@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account aanmaken</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    
+    <body class="aanmelden">
+    
+        <header>
+
+        </header>
+    
+        <main>
+            
+            <form action="/index.html">
+
+               <fieldset class="items">
+                    <legend>Account aanmaken</legend>
+                    <label for="naam">Naam :</label>
+                    <input required id="naam" type="text" >
+                    <label for="geboortedatum">Geboortedatum :</label>
+                    <input id="geboortedatum" type="date"
+                    placeholder="dd-mm-jjjj">
+                    <label for="postcode">Postcode :</label>
+                    <input id="postcode" type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}">
+                    <label for="huisnummer">Huisnummer :</label>
+                    <input id="huisnummer" type="number" >
+                    <label required for="email">Email :</label>
+                    <input id="email" type="email" >
+                    <label for="telefoonnummer">Telefoonnummer :</label>
+                    <input id="telefoonnummer" type="tel"> 
+                   <button class="volgende" id="next">Volgende</button>
+                </fieldset>
+
+                <fieldset class="items hidden"> 
+                    <legend>Inlog gegevens</legend>
+                    <label for="gebruikersnaam">Gebruikersnaam :</label>  
+                    <input id="gebruikersnaam" type="text">
+                    <label for="wachtwoord">Wachtwoord :</label>
+                    <input id="wachtwoord" type="password">
+                    <label for="herhaal">Herhaal wachtwoord :</label>
+                    <input id="herhaal" type="password">
+                    <input type="submit">
+                </fieldset> 
+
+            </form>       
+        </main>
+    
+        <footer>
+        </footer>
+        
+        <script src="js/verhalen.js"></script>
+        
+    </body>
+    
+</html>
