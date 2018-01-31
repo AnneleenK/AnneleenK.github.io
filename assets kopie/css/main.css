@@ -60,7 +60,10 @@ table {
     src: url(font/nssanbol-webfont.ttf);
 }
 
-/* BASIC */
+/* 
+BASIC
+Het NS font wordt ingesteld en grote van fonts. Verder wordt de navigatie en header met daarin het logo zijn hier aangemaakt
+*/
 
 html {
     font-family: "NSBasic";
@@ -454,7 +457,10 @@ button.twee:hover,
     box-shadow: 0 -3.125rem 0 #003082 inset;
 }
 
-/* Verhalen */
+/* 
+Verhalen
+De verhalen voor de mobiele versie
+*/
 
 .klein{
     width: 100%;
@@ -481,19 +487,14 @@ button.twee:hover,
     background-size: cover;
 }
 
- /* overig */
-
-.boeken{
-    background-image: url(images/boeken);
-    height: 12.5em;
-    background-position: center;
-    background-size: cover;
-}
-
 
 /* Animaties */
 
 /* Bron:https://daneden.github.io/animate.css/ */
+
+/* 
+Micro interactie van het duimpje
+*/
 
 @keyframes swing {
   20% {
@@ -524,6 +525,10 @@ button.twee:hover,
 .verhaalopslaan {
 	display: none;
 }
+
+/* 
+Micro interactie van het reactie wolkje
+*/
 
 @keyframes bounce {
   from,
@@ -564,6 +569,9 @@ button.twee:hover,
   transform-origin: center bottom;
 }
 
+/* 
+Micro interactie van het hartje
+*/
 
 @keyframes pulse {
   from {
@@ -959,25 +967,5 @@ button.twee:hover,
     font-size: 160%;
     }
     
-}
-
-/*================================================================
-                            Desktop groot
-==================================================================*/
-
-@media only screen and (min-width: 90em) {
-    
-    
-    /* Login & Aanmelden */
-    
-    
-    /* Overzicht pagina */
-    nav{
-        bottom:92.7%;
-    }
-    
-    h1{
-        font-size: 10%;
-    }
 }
     
