@@ -79,7 +79,7 @@ nav {
     bottom: 0;
     left: 0;
     background-color: #ffc917;
-    height: 50px;
+    height: 3.125em;
     width: 100%;
 }
 
@@ -100,12 +100,12 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a > img {
-    height: 35px;
+    height: 2.1875em;
     width: auto;
 }
 
 a {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 250%;
 }
 
@@ -138,7 +138,7 @@ body {
     background-color: #e6e6e9;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60px auto 60px;
+    grid-template-rows: 3.75em auto 3.75em;
 }
 
 img {
@@ -171,13 +171,13 @@ body.aanmelden > main {
 }
 
 legend {
-    font-size: 28px;
+    font-size: 1.75em;
     margin-bottom: 5%;
     color: #003082;
 }
 
 label {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 150%;
 }
 
@@ -195,7 +195,7 @@ input[type=submit],
     text-align: center;
     color: white;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.125em;
     margin-top: 5%;
     padding: 2%
 }
@@ -226,7 +226,7 @@ input[type=submit],
    
 input:focus {
     border-color: #003082;
-    outline: 1px dotted #003082;
+    outline: 0.0625em dotted #003082;
     outline-offset: .225rem
 }
 
@@ -245,7 +245,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 60px;
+    height: 3.75em;
     background-color: #ffc917;
     display: flex;
     align-items: center;
@@ -267,7 +267,7 @@ h1.kop {
     background-image: url(images/mensen%20trein.jpg);
     background-size: cover;
     background-position: center;
-    height: 220px;
+    height: 13.75em;
 }
     /* bron:https://www.mamasliefste.nl/blog/10x-als-telefoon-vergeten-bent/ */
 
@@ -290,7 +290,7 @@ section.iconen,
 .zeven,
 .acht{
     background-color: white;
-    height: 40px;
+    height: 2.5em;
     margin-top: 55%;
     padding: 0 5% 0 7%;;
     display: block;
@@ -362,6 +362,7 @@ button.een,
 button.een > a{
     color: black;
     font-family: "NSBasic";
+    font-size: 1.5em;
 }
 
 button.twee,
@@ -374,6 +375,7 @@ button.twee > a,
 .meer{
     color: white;
     font-family: "NSBasic";
+    font-size: 1.5em;
 }
 
 .kinderboek,
@@ -387,13 +389,13 @@ button.twee > a,
 .code,
 .boers {
     display: inline-block;
-    width: 200px;
+    width: 12.5em;
     text-align: center;
     margin: 0 3%;
     overflow-x: scroll;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 9.375em;
 }
 
 .parent {
@@ -403,7 +405,7 @@ button.twee > a,
 
 .profiel {
     height: auto;
-    width: 130px;
+    width:  10.2em;
     justify-content: center;
     overflow: hidden;
     margin-bottom: 5%;
@@ -417,17 +419,17 @@ img.profiel {
     display: flex;
     overflow: hidden;
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
+    height: 7.5em;
+    width: 7.5em;
 }
 
 .icoon {
-    height: 25px;
-    width: 35px;
+    height: 1.5625em;
+    width: 2.1875em;
 }
 
 img.reactie {
-    width: 97px;
+    width: 6.0625em;
     padding-top: 3%;
 }
 
@@ -474,7 +476,7 @@ button.twee:hover,
 
 .inleidingverrassing{
     background-image: url(images/verrassing.jpg);
-    height: 200px;
+    height: 12.5em;
     background-position: center;
     background-size: cover;
 }
@@ -483,7 +485,7 @@ button.twee:hover,
 
 .boeken{
     background-image: url(images/boeken);
-    height: 200px;
+    height: 12.5em;
     background-position: center;
     background-size: cover;
 }
@@ -539,20 +541,20 @@ button.twee:hover,
   43% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -1.875em, 0);
+    transform: translate3d(0, -1.875em, 0);
   }
 
   70% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
+    -webkit-transform: translate3d(0, -0.9375em, 0);
+    transform: translate3d(0, -0.9375em, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
+    -webkit-transform: translate3d(0, -0.25em, 0);
+    transform: translate3d(0, -0.25em, 0);
   }
 }
 
@@ -589,7 +591,7 @@ button.twee:hover,
                 Ipad mini
 ==================================================================*/
 
-@media only screen and (min-width: 752px) and (max-width: 1025px){
+@media only screen and (min-width: 47em) and (max-width: 64em){
 
     /* Login & Aanmelden */ 
 
@@ -670,7 +672,7 @@ button.twee:hover,
     }
     
     .direct {
-        height: 240px;
+        height: 15em;
     }
     
     .logo {
@@ -705,7 +707,7 @@ button.twee:hover,
                             Desktop
 ==================================================================*/
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 64em) {
 
    
     /* Login & Aanmelden */
@@ -833,39 +835,39 @@ button.twee:hover,
     .zes,
     .zeven,
     .acht{
-        margin-top: 110px;
-        margin-left: -131px;
-        height: 40px;
+        margin-top: 6.875em;
+        margin-left: -8.1875em;
+        height: 2.5em;
         width: 100%;
         display: flex;
     }
     
     .tweee{
-        margin-left: -120px;
+        margin-left: -7.5em;
     }
     
     .drie{
-        margin-left: -148px;
+        margin-left: -9.25em;
     }
     
     .vier{
-        margin-left: -122px;
+        margin-left: -7.625em;
     }
     
     .vijf{
-        margin-left: -104px;
+        margin-left: -7.625em;
     }
     
     .zes{
-        margin-left: -60px;
+        margin-left: -3.75em;
     }
     
     .zeven{
-        margin-left: -86px;
+        margin-left: -5.375em;
     }
     
     .acht{
-        padding-left: 91px;
+        padding-left: 5.6875em;
     }
     
     .icoon{
@@ -875,12 +877,12 @@ button.twee:hover,
     
     .profiel{
         margin-bottom: 2%;
-        width: 13%;
+        width: 11.9em;
     }
     
     img.profiel {
-        height: 140px;
-        width: 140px;
+        height: 8.75em;
+        width: 8.75em;
     }
     
     /* Verhalen */
@@ -910,7 +912,7 @@ button.twee:hover,
                             Desktop groot
 ==================================================================*/
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 77.5em) {
     
     
     /* Login & Aanmelden */
@@ -924,7 +926,7 @@ button.twee:hover,
     /* Overzicht pagina */
     
     .direct{
-        height:280px;
+        height:17.5em;
     }
     
     h2.hoofd{
@@ -944,8 +946,8 @@ button.twee:hover,
     }
     
     img.profiel {
-        height: 145px;
-        width: 145px;
+        height: 8.5em;
+        width: 8.5em;
     }
     
     button.een,
@@ -963,7 +965,7 @@ button.twee:hover,
                             Desktop groot
 ==================================================================*/
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90em) {
     
     
     /* Login & Aanmelden */
